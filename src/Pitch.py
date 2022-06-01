@@ -2,7 +2,7 @@ import sys
 import numpy as np
 from aubio import source, pitch
 
-def funcFitch(path):
+def funcPitch(path):
     win_s = 4096
     hop_s = 512
 

@@ -27,9 +27,9 @@ def freq(file, start_time, end_time):  # HZ trung binh
     return hz
 
 print("hz tb: ", freq('./máy bơm 2.wav', 0, 7000))
-# print("hz tb: ", freq('./máy phát điện 1.wav', 0, 7000))
-# print("hz tb: ", freq('./quạt điện 4.wav', 0, 7000))
-# print("hz tb: ", freq('./cua_dien_1.wav', 0, 7000))
-# print("hz tb: ", freq('./khoan_dien_1.wav', 0, 7000))
-# print("hz tb: ", freq('./may_cat_co_2.wav', 0, 7000))
-# print("hz tb: ", freq('./may_say_toc_1.wav', 0, 7000))
+print("hz tb: ", freq('./máy phát điện 1.wav', 0, 7000))
+print("hz tb: ", freq('./quạt điện 4.wav', 0, 7000))
+print("hz tb: ", freq('./cua_dien_1.wav', 0, 7000))
+print("hz tb: ", freq('./khoan_dien_1.wav', 0, 7000))
+print("hz tb: ", freq('./may_cat_co_2.wav', 0, 7000))
+print("hz tb: ", freq('./may_say_toc_1.wav', 0, 7000))

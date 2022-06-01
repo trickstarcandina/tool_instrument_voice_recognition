@@ -6,7 +6,7 @@ win_s = 4096
 hop_s = 512 
 
 samplerate = 44100
-s = source(sys.argv[1], samplerate, hop_s)
+s = source('./máy phát điện 1.wav', samplerate, hop_s)
 samplerate = s.samplerate
 
 tolerance = 0.8

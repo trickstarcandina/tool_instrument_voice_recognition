@@ -1,7 +1,13 @@
-# tool\_-_instrument_voice_recognition
+# Run in Anaconda3 - Python 3.9.7
 
-# run by Anaconda3 - Python 3.9.7
+### 1. Vscode Ctrl + Shift + P
+![image](https://user-images.githubusercontent.com/61593963/172040615-14ca6ccb-280e-41f0-9b07-a919eb71f06b.png)
 
+### 2. Select environmental
+![image](https://user-images.githubusercontent.com/61593963/172040652-f1ebde8b-60df-4e46-91c8-5d8eb4824ad6.png)
+
+
+============================================================================================
 Nhóm 15:
 
 Xây dựng hệ CSDL nhận dạng tiếng công cụ/dụng cụ.

@@ -1,4 +1,6 @@
-# tool_-_instrument_voice_recognition
+# tool\_-_instrument_voice_recognition
+
+# run by Anaconda3 - Python 3.9.7
 
 Nhóm 15:
 
@@ -17,9 +19,6 @@ b.Trình bày các thuộc tính được sử dụng để nhận dạng tiến
 c.Trình bày cách lưu trữ các thuộc tính âm thanh về tiếng công cụ/dụng cụ và cách nhận dạng tiếng công cụ/dụng cụ dựa trên các thuộc tính đó.
 
 4.Demo hệ thống và đánh giá kết quả đã đạt được.
-
-
-
 
 1 máy sấy tóc
 

@@ -2,14 +2,14 @@ import sys
 import numpy as np
 from aubio import source, pitch
 
-def funcPitch(path):
+def funcPitch(path, pitch):
     win_s = 4096
     hop_s = 512
 
     samplerate = 44100
     # s = source('File âm thanh/1 máy sấy tóc/may_say_toc_1.wav', samplerate, hop_s)
-    # s = source('E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav', samplerate, hop_s)
-    s = source(path, samplerate, hop_s)
+    s = source('E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav', samplerate, hop_s)
+    # s = source(path, samplerate, hop_s)
     samplerate = s.samplerate
 
     tolerance = 0.8

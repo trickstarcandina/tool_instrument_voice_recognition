@@ -1,5 +1,7 @@
 import librosa.display
 import matplotlib.pyplot as plt
+
+
 def Find_Max(arr, f, l):
     """
     :param arr: list of integer
@@ -12,6 +14,7 @@ def Find_Max(arr, f, l):
             max = arr[i]
 
     return max
+
 
 def Find_Min(arr, f, l):
     """
@@ -26,6 +29,7 @@ def Find_Min(arr, f, l):
 
     return min
 
+
 def KhoangLang(arr, f, l):
     max = Find_Max(arr, f, l)
     min = Find_Min(arr, f, l)
@@ -36,7 +40,8 @@ def KhoangLang(arr, f, l):
         if arr[i] > nguong:
             dem = dem + 1
 
-    return 100-(dem / (l-f)) * 100
+    return 100 - (dem / (l - f)) * 100
+
 
 # plt.figure(figsize=(5, 5))
 # path = "E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"
@@ -45,9 +50,12 @@ def funcPercentSilence(path):
     # print(librosa.feature.mfcc(y=y, sr=sr).shape)
     # print("khoang lang theo 1 s:")
     result = []
-    for i in range(0, 7):
+    for i in range(0, 6):
         # print("thoi gian: ", i, " = ",KhoangLang(y, i*sr, (i+1)*sr))
-        result.append(KhoangLang(y, i*sr, (i+1)*sr))
+        result.append(KhoangLang(y, i * sr, (i + 1) * sr))
+    result.append(KhoangLang(y, 6, len(y)))
     return result
 
-# print(funcPercentSilence("E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"))
+
+print(
+    funcPercentSilence("E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"))

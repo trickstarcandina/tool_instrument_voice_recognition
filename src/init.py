@@ -55,10 +55,10 @@ with open('src/CSDLDPT.csv', 'w', encoding='UTF8') as f:
                 path, 
                 funcPitch(path, pitch), 
                 funcRMSE(path), 
-                funcPercentSilence(path), 
+                funcPercentSilence(path),
                 funcFrequencyMagnitude(path)
             ]
-            print("======" + path)
             writer.writerow(data)   
         except:
+            print("======" + path)
             print('Have exception')

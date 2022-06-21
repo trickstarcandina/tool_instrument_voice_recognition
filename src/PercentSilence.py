@@ -1,6 +1,13 @@
 import librosa.display
 import matplotlib.pyplot as plt
 
+# 700 phần tử. mỗi 1s có 100 p.tử
+# giá trị đầu tiên bằng trung bình của 100 phần tử
+
+# chia 7 đoạn
+# tính phần trăm của các âm nhỏ hơn ngưỡng nghe với ngưỡng nghe = (max + min) / 2 * 0.3
+
+# tần số lấy mẫu là số lấy mẫu trong 1s
 
 def Find_Max(arr, f, l):
     """
@@ -57,5 +64,4 @@ def funcPercentSilence(path):
     return result
 
 
-print(
-    funcPercentSilence("E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"))
+# print(funcPercentSilence("E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"))

@@ -2,14 +2,16 @@ import sys
 import numpy as np
 from aubio import source, pitch
 
+# 700 phần tử. mỗi 1s có 100 p.tử
+# giá trị đầu tiên bằng trung bình của 100 phần tử
+
 def funcPitch(path, pitch):
     win_s = 4096
     hop_s = 512
 
     samplerate = 44100
     # s = source('File âm thanh/1 máy sấy tóc/may_say_toc_1.wav', samplerate, hop_s)
-    s = source('E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav', samplerate, hop_s)
-    # s = source(path, samplerate, hop_s)
+    s = source(path, samplerate, hop_s)
     samplerate = s.samplerate
 
     tolerance = 0.8
@@ -43,7 +45,7 @@ def funcPitch(path, pitch):
         pitchLocal = []
         for j in range(step*i, max, 1):
             pitchLocal.append(pitches[j])
-        result.append(np.array(pitchLocal).mean())
+        result.append(np.array(pitchLocal).mean())  # tính trung bình 
 
     # print("Average frequency = " + str(np.array(pitches).mean()) + " hz")
     # print(len(result))

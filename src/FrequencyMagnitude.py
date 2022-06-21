@@ -4,6 +4,13 @@ import librosa, librosa.display
 import IPython.display as ipd
 import numpy as np
 
+# 700 phần tử. mỗi 1s có 100 p.tử
+# giá trị đầu tiên bằng trung bình của 100 phần tử
+
+# Mảng X_mag trả về một mảng bao gồm: 
+# Giá trị của phần tử = giá trị magnitude, 
+# vị trí của phần tử đó = hz tương ứng => Dùng 2 mảng để lưu lại 2 giá trị đó
+
 def funcFrequencyMagnitude(audio_dir):
     # audio_dir = "E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"
     audio, sr = librosa.load(audio_dir, duration = 7)
@@ -56,4 +63,4 @@ def funcFrequencyMagnitude(audio_dir):
 
 
 # test
-print(funcFrequencyMagnitude("E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"))
+# print(funcFrequencyMagnitude("E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"))

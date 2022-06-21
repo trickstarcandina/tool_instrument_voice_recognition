@@ -4,6 +4,8 @@ import librosa
 import librosa.display
 import IPython.display as ipd
 
+# 700 phần tử. mỗi 1s có 100 p.tử
+# giá trị đầu tiên bằng trung bình của 100 phần tử
 
 def funcRMSE(tool1_file):
     # tool1_file = "E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"
@@ -47,4 +49,4 @@ def funcRMSE(tool1_file):
 #     result[window] = avg
 #     window += 1  
 
-print(funcRMSE("E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"))
+# print(funcRMSE("E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"))

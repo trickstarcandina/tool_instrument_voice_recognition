@@ -32,7 +32,13 @@ def compareFile(att1, att2):
     return maxRes
     
 ###################################### input ###########################
-path = "E:/Learn/tool_instrument_voice_recognition/src/File test/test_maysaytoc.wav" 
+path = "E:/Learn/tool_instrument_voice_recognition/src/File test/test_mayxay.wav" 
+# test_DongCo F1.wav
+# test_khoandien.wav
+# test_maysaytoc.wav
+# test_MayThoiLa.wav
+# test_mayxay.wav
+
 att1 = [] 
 
 pitchAtt = funcPitch(path, pitch)
@@ -101,7 +107,7 @@ for i in range(len(metadata)):
 
     lastResult.append(
         pathAndResult(
-            metadata[i][0].split('/')[5],
+            "Type: " + metadata[i][0].split('/')[5],
             compareFile(att1, att)
         )
     )
@@ -116,10 +122,10 @@ for i in range(100):
             lastResult[j] = swap
 
 print(lastResult[0].type, lastResult[0].distance)
-print(lastResult[1].type, lastResult[1].distance)
-print(lastResult[2].type, lastResult[2].distance)
-print(lastResult[3].type, lastResult[3].distance)
-print(lastResult[4].type, lastResult[4].distance)
+# print(lastResult[1].type, lastResult[1].distance)
+# print(lastResult[2].type, lastResult[2].distance)
+# print(lastResult[3].type, lastResult[3].distance)
+# print(lastResult[4].type, lastResult[4].distance)
 
 
 

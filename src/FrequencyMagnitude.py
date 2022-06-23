@@ -13,9 +13,9 @@ import numpy as np
 
 def funcFrequencyMagnitude(audio_dir):
     # audio_dir = "E:/Learn/tool_instrument_voice_recognition/src/File âm thanh/1 máy sấy tóc/may_say_toc_1.wav"
-    audio, sr = librosa.load(audio_dir, duration = 7)
-    X = np.fft.fft(audio)
-    X_mag = np.absolute(X)
+    audio, sr = librosa.load(audio_dir, duration = 7)#Load file âm thanh vào librosa
+    X = np.fft.fft(audio) #Mảng X là mảng chứa dãy tần số và mật độ của nó (Mặc định thì độ lớn của mật độ là số ảo ) (Số thực = mật độ / Số ảo = giá trị pha (Ko cần))
+    X_mag = np.absolute(X) #Lấy giá trị tuyệt đối thì sẽ có được phần số thực 
 
     f = np.linspace(0, sr, len(X_mag))
     f_bins = int(len(X_mag))  
